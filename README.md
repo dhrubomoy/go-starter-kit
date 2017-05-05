@@ -91,12 +91,21 @@ The client app will be compiled into `server/data/static/build/`.  Then it will 
 
 **Convention**: javascript app should declare [_main_](https://github.com/olebedev/go-starter-kit/blob/master/client/index.js#L4) function right in the global namespace. It will used to render the app at the server side.
 
+## The `GOPATH` environment variable (for mac)
+Specifies the location of your workspace by setting the GOPATH environment variable. [More Info](https://golang.org/doc/code.html#GOPATH)
+
+If you have not set `GOPATH`, you can substitute `$HOME/go` in those commands or else run:
+```
+$ export GOPATH=$(go env GOPATH)
+```
+Run `$GOPATH` to see if the directory (eg. `\Users\<Username>\go`) exist. If it doesn't exist create directory.
+
 ## Install
 
 Clone the repo:
 
 ```
-$ git clone git@github.com:olebedev/go-starter-kit.git $GOPATH/src/github.com/<username>/<project>
+$ git clone https://github.com:olebedev/go-starter-kit.git $GOPATH/src/github.com/<username>/<project>
 $ cd $GOPATH/src/github.com/<username>/<project>
 ```
 
